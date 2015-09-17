@@ -1,0 +1,114 @@
+<!-- 
+
+Success! Use the userId and token listed below to get your images:
+userId: 1828997144
+accessToken: 1828997144.467ede5.933a2b7991b9419c9cb8c5d2cf7c2c7a
+CLIENT ID	7476ca44c6814ba59291dc5d747a07fe
+
+    -->
+
+<html>
+	<head>
+		<title>En extra fansite</title>
+		<style>
+			body { margin: 0; }
+			canvas { width: 100%; height: 100% }
+		</style>
+	</head>
+	<body>
+
+		<img src="textures/sara.jpg"></img>
+		<div id="instafeed"></div> 
+
+		<script src="three.min.js"></script>
+		<script src="js/stats.min.js"></script>
+		<script src="js/instafeed.min.js"></script>
+
+		<script type="text/javascript">
+    		var userFeed = new Instafeed({
+        get: 'user',
+        userId: 1828997144,
+        accessToken: '1828997144.467ede5.933a2b7991b9419c9cb8c5d2cf7c2c7a'
+	    });
+	    userFeed.run();
+    	
+		</script>
+<!--
+			// rendering loop
+			var render = function () 
+			{
+				requestAnimationFrame( render );
+
+				//ground.rotation.x += 0.01;
+				ground1.rotation.z += 0.01;
+
+				//updatePosition(camera.position);
+
+				renderer.render(scene, camera);
+			};
+
+			var scene = new THREE.Scene();
+			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+
+			var renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			// change background color of renderer
+			//renderer.setClearColor( 0xffffff, 1);
+			document.body.appendChild( renderer.domElement );
+
+			var w = 2, h = 2;
+
+			// first texture
+			var planeTex = THREE.ImageUtils.loadTexture("textures/boppi.jpg");
+			planeTex.wrapS = planeTex.wrapT = THREE.RepeatWrapping;
+			planeTex.repeat.set( 1, 1 );
+			var planeMat = new THREE.MeshBasicMaterial( { map: planeTex } );
+			planeMat.side = THREE.DoubleSide;
+
+			// back texture
+			var planeTex2 = THREE.ImageUtils.loadTexture("textures/boppi2.jpg");
+			planeTex2.wrapS = planeTex2.wrapT = THREE.RepeatWrapping;
+			planeTex2.repeat.set( 1, 1 );
+			var planeMat2 = new THREE.MeshBasicMaterial( { map: planeTex2 } );
+			planeMat2.side = THREE.DoubleSide;
+
+
+
+			geometry = new THREE.PlaneGeometry( w, h );
+			geometry2 = new THREE.PlaneGeometry( w*3, h*3 );
+
+			var material = new THREE.MeshBasicMaterial( {color: 0xffff00, side: THREE.DoubleSide}  );
+			var material2 = new THREE.MeshBasicMaterial( {color: 0xff0000, side: THREE.DoubleSide}  );
+
+			// CHANGE MATERIAL TO PLANEMAT WHEN PUSHING TO GITHUB
+			ground1 = new THREE.Mesh( geometry, planeMat );
+
+			ground2 = new THREE.Mesh( geometry2, planeMat2 );
+
+			//ground.position.set( 0, -10, 0 );
+			//ground.rotation.x = Math.PI/2;
+			//ground.scale.set( 10, 10, 10 );
+			scene.add( ground1 );
+			scene.add( ground2 );
+
+			ground2.position.z = -1;
+
+			//ground.rotation.x += 3.14159/2;
+
+			// z is depth
+			// y is height
+			// x is left/right
+			camera.position.z = 2;
+			//camera.position.y = +1;
+
+
+			render();
+		
+		</script>-->
+	</body>
+</html>
+
+
+
+
+
