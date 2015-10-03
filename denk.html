@@ -62,39 +62,39 @@
 			var w = 2, h = 2;
 
 			// first texture
-			var planeTex = THREE.ImageUtils.loadTexture("textures/boppi.jpg");
+			var planeTex = THREE.ImageUtils.loadTexture("textures/denk.jpg");
 			planeTex.wrapS = planeTex.wrapT = THREE.RepeatWrapping;
 			planeTex.repeat.set( 1, 1 );
 			var planeMat = new THREE.MeshBasicMaterial( { map: planeTex } );
 			planeMat.side = THREE.DoubleSide;
 
 			// back texture
-			var planeTex2 = THREE.ImageUtils.loadTexture("textures/denk.jpg");
+			/* var planeTex2 = THREE.ImageUtils.loadTexture("textures/denk.jpg");
 			planeTex2.wrapS = planeTex2.wrapT = THREE.RepeatWrapping;
 			planeTex2.repeat.set( 1, 1 );
 			var planeMat2 = new THREE.MeshBasicMaterial( { map: planeTex2 } );
-			planeMat2.side = THREE.DoubleSide;
+			planeMat2.side = THREE.DoubleSide; */
 
 
 
 			geometry = new THREE.PlaneGeometry( w, h );
-			geometry2 = new THREE.PlaneGeometry( w*3, h*3 );
+			//geometry2 = new THREE.PlaneGeometry( w*3, h*3 );
 
 			var material = new THREE.MeshBasicMaterial( {color: 0xffff00, side: THREE.DoubleSide}  );
-			var material2 = new THREE.MeshBasicMaterial( {color: 0xff0000, side: THREE.DoubleSide}  );
+			//var material2 = new THREE.MeshBasicMaterial( {color: 0xff0000, side: THREE.DoubleSide}  );
 
 			// CHANGE MATERIAL TO PLANEMAT WHEN PUSHING TO GITHUB
 			ground1 = new THREE.Mesh( geometry, planeMat );
 
-			ground2 = new THREE.Mesh( geometry2, planeMat2 );
+			//ground2 = new THREE.Mesh( geometry2, planeMat2 );
 
 			//ground.position.set( 0, -10, 0 );
 			//ground.rotation.x = Math.PI/2;
 			//ground.scale.set( 10, 10, 10 );
 			scene.add( ground1 );
-			scene.add( ground2 );
+			//scene.add( ground2 );
 
-			ground2.position.z = -1;
+			//ground2.position.z = -1;
 
 			//ground.rotation.x += 3.14159/2;
 
