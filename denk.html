@@ -4,14 +4,16 @@
 		<title>~Denkmeistro fanclub~</title>
 		<style>
 			body { margin: 0; }
-			canvas { width: 50%; height: 50% }
+			canvas { width: 100%; height: 100% }
 		</style>
 	</head>
 	<body>
-		<body bgcolor="#ffffff">
+		<body bgcolor="#000000">
 		
 		<br>
 		<marquee><font color="white" size="20" face="comic sans ms">"Man känner aldrig sig så fri som när man sitter och dricker bakom systembolaget."</font></marquee>
+		<br>
+		<br>
 
 		<script src="js/three.min.js"></script>
 		<script src="js/Detector.js"></script>
@@ -54,7 +56,7 @@
 			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
 
 			var renderer = new THREE.WebGLRenderer();
-			renderer.setSize( window.innerWidth, window.innerHeight );
+			renderer.setSize( window.innerWidth, window.innerHeight*0.85 );
 			// change background color of renderer
 			//renderer.setClearColor( 0xffffff, 1);
 			document.body.appendChild( renderer.domElement );
