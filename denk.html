@@ -5,14 +5,18 @@
 		<style>
 			body { margin: 0; }
 			canvas { width: 100%; height: 100% }
+			h1 {
+				font-family: "Comic sans MS";
+				font-size: 35px;
+				color: white;
+			};
 		</style>
 	</head>
 	<body>
 		<body bgcolor="#000000">
 		
 		<br>
-		<marquee><font color="white" size="20" face="comic sans ms">"Man känner aldrig sig så fri som när man sitter och dricker bakom systembolaget."</font></marquee>
-		<br>
+		<center><h1>"Man känner aldrig sig så fri som när man sitter och dricker bakom systembolaget."<h1></center>
 		<br>
 
 		<script src="js/three.min.js"></script>
@@ -24,22 +28,12 @@
 			var render = function () 
 			{
 				requestAnimationFrame( render );
-
-				//ground.rotation.x += 0.01;
 				ground1.rotation.z += 0.01;
 
 				//updatePosition(camera.position);
-
 				renderer.render(scene, camera);
 			};
 
-			// function for updating position and make texture look like you're moving
-			// https://github.com/tapio/jetpursuit/blob/a78a4efd6ce5ea4f2cd41b74c23b1e803fa22095/js/world.js#L70-L73
-			/* 
-			I have an infinite ocean floor in my top-down game. I reposition it to the camera's xy-coordinates (keeping a distance with z). 
-			I then modify the texture's offset property so that it appears the floor is moving even though it's glued to the camera.
-			*/
-			
 			updatePosition = function(position) 
 			{
 				// Infinite plane
