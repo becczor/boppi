@@ -1,14 +1,15 @@
 <html>
 	<head>
+		<meta charset='utf-8'>
 		<title>~Denkmeistro fanclub~</title>
 		<style>
 			body { margin: 0; }
-			canvas { width: 100%; height: 100% }
+			canvas { width: 50%; height: 50% }
 		</style>
 	</head>
 	<body>
-		<body bgcolor="#000000">
-		<meta charset='utf-8'>
+		<body bgcolor="#ffffff">
+		
 		<br>
 		<marquee><font color="white" size="20" face="comic sans ms">"Man känner aldrig sig så fri som när man sitter och dricker bakom systembolaget."</font></marquee>
 
@@ -68,7 +69,7 @@
 			planeMat.side = THREE.DoubleSide;
 
 			// back texture
-			var planeTex2 = THREE.ImageUtils.loadTexture("textures/boppi2.jpg");
+			var planeTex2 = THREE.ImageUtils.loadTexture("textures/denk.jpg");
 			planeTex2.wrapS = planeTex2.wrapT = THREE.RepeatWrapping;
 			planeTex2.repeat.set( 1, 1 );
 			var planeMat2 = new THREE.MeshBasicMaterial( { map: planeTex2 } );
