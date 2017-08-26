@@ -1,0 +1,9 @@
+body { 
+	margin: 0; 
+	background-image: url("../textures/boppiers.png");
+}
+
+canvas { 
+	width: 50%; 
+	height: 50% 
+}
