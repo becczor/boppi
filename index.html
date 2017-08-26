@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<title>En fansite</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<style>
 			body { 
 				margin: 0; 
-				background-image: url("textures/boppi2.jpg");
+				background-image: url("textures/boppiers.png");
+				background-size: 500px;
+				text-align: center;
 			}
 
 			canvas { 
 				width: 100%; 
 				height: 100% 
 			}
+
+			#navigation {
+				background-color: rgba(255, 255, 255, 0.9);
+				padding: 20px;
+				margin: 0 auto; /* To center things */
+				
+			}
 		</style>
+		<script src="js/three.min.js"></script>
 	</head>
 	<body>
-
-		<!--<img src="textures/sara.jpg"></img>-->
-
-		<script src="js/three.min.js"></script>
-		<script src="js/customscript.js"></script>
+		<div id="navigation">
+			<button type="button" class="btn btn-danger" onclick="toggleAnimation()"><h3>Lyssna nu!</h3></button>
+		</div>
+		<div id="animation">
+			<script src="js/customscript.js"></script>
+		</div>
 	</body>
 </html>
 
