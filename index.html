@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>En fansite</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
 		<style>
 			body { 
 				margin: 0; 
@@ -25,13 +26,17 @@
 			}
 		</style>
 		<script src="js/three.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/customscript.js"></script>
 	</head>
 	<body>
 		<div id="navigation">
-			<button type="button" class="btn btn-danger" onclick="toggleAnimation()"><h3>Lyssna nu!</h3></button>
+			<button type="button" class="btn btn-danger" id="button_play" onclick="toggleAnimation()"><i id="play-symbol" class="fa fa-play" style="color:#ffffff"></i></button>
+			<br>
+			<iframe width="200" height="113" src="https://www.youtube.com/embed/6V8_Xvaz7xE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<div id="animation">
-			<script src="js/customscript.js"></script>
+			<script src="js/animation.js"></script>
 		</div>
 	</body>
 </html>
